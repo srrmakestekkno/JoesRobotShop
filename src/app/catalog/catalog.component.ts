@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class CatalogComponent {
   products: any; // defaults to public
   filter: string = "";
-  //private cartSvc: CartService = inject(CartService); // Samme metode som constructor parameter
+  //private cartSvc: CartService = inject(CartService); // Same metode as constructor parameter
 
   constructor(
     private cartSvc: CartService, 
