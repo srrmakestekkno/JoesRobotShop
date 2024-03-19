@@ -1,5 +1,5 @@
 <div class="container">
-  <form #singIngForm="ngForm" class="form" (ngSubmit)="signIn()">
+  <form #signInForm="ngForm" class="form" (ngSubmit)="signIn()">
     <img class="logo" src="/assets/images/logo.png" />
     <div class="sign-in">Sign In</div>
     <div class="sub-text">to acquire awesome bots</div>
@@ -9,7 +9,7 @@
     <input name="password" required #password="ngModel" [(ngModel)]="credentials.password" placeholder="Password" type="password" />
     <em class="error" *ngIf="password.invalid && password.touched">Password is required</em>
     <div class="buttons">
-      <button type="submit" [disabled]="singIngForm.form.invalid" class="button cta">
+      <button type="submit" [disabled]="signInForm.form.invalid" class="button cta">
         Sign In
       </button>
     </div>
